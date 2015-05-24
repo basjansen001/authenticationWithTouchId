@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 				if succes {
 					// Succesfully authenticated
 				} else {
-					// User did not authenticate succesfully, look at error and take appropriate action
+					// User did not authenticate succesfully, look at the error and take appropriate action
 				}
 			})
 		} else {
