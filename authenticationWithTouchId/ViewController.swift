@@ -18,11 +18,11 @@ class ViewController: UIViewController {
 		
       if myContext.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, error: &error) {
           myContext.evaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString, reply: { (var succes: Bool, var error: NSError?) -> Void in
-          if succes {
-              // Succesfully authenticated
-          } else {
-              // User did not authenticate succesfully, look at the error and take appropriate action
-          }
+              if succes {
+                  // Succesfully authenticated
+              } else {
+                  // User did not authenticate succesfully, look at the error and take appropriate action
+              }
           })
       } else {
           // Could not evelaute policy; look at authError and present an appropriate message to user.
